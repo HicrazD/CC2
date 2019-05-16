@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+   <title>HTML 5 </title>
+   <meta charset= "UTF-8">
+   <script type="text/javascript" src="app.js"></script>
+<link rel= "stylesheet" type= "text/css" href="Registro/estilos.css">
+ </head>
+
+<body>
+        
+  <header>
+        
+      <p> UBICACION </p>
+      <div id="logotipo1"> </div>
+ </header>
+ <div id="container">
+    <nav>
+        <ul>
+             <li><a href="admin.html">Administrar usuario<i class="down"></i></a>
+                    <ul>
+                      <li><a href="Dar de alta.html">Dar de alta</a></li>
+                      <li><a href="Dar de baja.html">Dar de baja</a></li>    
+                   </ul>
+            </li>
+            <li><a href="registrar.html">hacer registro <i class="down"></i></a>
+            <!-- Primer Menu Desplegable -->
+            <ul>
+                <li><a href="ubicacion.html">Ubicacion</a></li>
+                <li><a href="registrojefef.html">Registro Jefe familiar</a></li>
+                <li><a href="registrointegrante.html">Registro Integrante</a></li>
+                <li><a href="registrocaracf.html">Registro Caracteriticas-Familia</a></li>
+                <li><a href="registrocaracV.html">Registro Caracteristicas Vivienda </a></li>
+                <li><a href="registroS.html">Registro Servicios</a></li>
+                <li><a href="registroM.html">Registro Mascotas</a></li>
+               
+            </ul>        
+            </li>
+            <li><a href="modificar.html"> modificar </a>
+            </li>
+            <li> <a href = "eliminar.html"> Eliminar </a> </li> 
+            <li> <a href = "gestionar.html"> Gestionar  </a></li> 
+            <li><a href="consultas.html">Consultar <i class="down"></i></a>
+                <!-- Primer Menu Desplegable -->
+                <ul>
+                        <li><a href="#">Crear consulta</a></li>
+                        <li><a href="#">Modificar Consulta</a></li>
+
+                   
+                </ul>        
+                </li>
+           
+        </ul>
+    </nav>
+  </div>
+     
+    <FORM>
+        <br><br><br><br>
+        <div id="fila1">
+
+            <span>ESTADO</span>
+            <select id="sexo"  onchange="ShowSelected();" name="sexo">
+              <option value="12">OAXACA</option>
+              <option value="13">MEXICO</option>
+              </select>
+
+              <span>Region</span>
+            <select id="sexo"  onchange="ShowSelected();" name="sexo">
+              <option value="12">Mixteca</option>
+              <option value="13">MEXICO</option>
+              </select>
+             
+              <span>Distrito</span>
+            <select id="sexo"  onchange="ShowSelected();" name="sexo">
+              <option value="12">San Pedro y san Pablo Teposcolula Oaxaca</option>
+              <option value="13">MEXICO</option>
+              </select>      
+              </div>
+              <br>
+              <br>
+              <br>
+             <!--                            fila 2                        -->
+               <div id="fila2">
+
+                  <span>Municipio</span>
+                  <INPUT type="text"  id="apellidop" name="apellidop">
+                   
+                  <span>Codigo Postal</span>
+                  <INPUT type="text"  id="apellidop" name="apellidop">
+
+                   <span>Localidad</span>
+                  <INPUT type="text"  id="apellidop" name="apellidop">
+                  <br><br><br><br><br><br>
+
+
+                 </div>
+        
+               <div id="columna">
+                  <span>Calle</span>
+                  <INPUT type="text"  id="apellidop" name="apellidop">
+
+                    <span>Numero</span>
+                  <INPUT type="text"  id="apellidop" name="apellidop">                 
+                </div>
+        
+              <div id="botones">
+                
+                <button type="button"  class="boton" onclick="getData()">Enviar</button>
+                <button type="button"  class="boton" onclick="getData()">Regresar</button>
+               </div>
+        
+            </FORM>
+
+     <footer>
+
+     </footer>
+     </section>
+    
+</body>
+</html>
