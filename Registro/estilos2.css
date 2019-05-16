@@ -1,0 +1,314 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+ 
+body {
+    background-color: #FFF;
+    background-image: url(img/imagen-fondo.jpg);
+    line-height: 10px;
+    word-wrap:break-word !important;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+a {
+    color: #FFF;
+}
+
+
+#container {
+    margin: 0 auto;
+}
+
+header{
+    width:100%;
+    height: 90px;
+    background:#023801;
+    margin: 30px auto;
+    padding:10px 0px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .5)
+  }
+  header p{
+  color:#fff;
+  font-size:30px;
+  text-align: center;
+  font-family:narkisin;
+  }
+
+p {
+    text-align: center;
+    
+}
+
+nav {
+    margin: 30px auto;
+    background-color: #023801;
+  box-shadow: 0px 3px 20px 3px #ffffff;  /* efecto luminoso alrededor del rectangulo*/
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 0;
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+    
+nav ul li {
+    display:inline-block;
+    background-color: #023801;
+    }
+
+nav a {
+    
+    padding:0px 10px; 
+    color:#FFF;
+    font-size:16px;
+    line-height: 40px;
+    text-decoration:none;
+}
+
+nav a:hover { 
+    background-color: #0d8103; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+    display: none;
+    position: absolute; 
+    top: 40px; /* the height of the main nav */
+}
+    
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+    
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width:300px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+    position: relative;
+    top:-60px; 
+    left:170px;
+}
+
+    
+i {
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: -7px 0 0px 7px;
+    vertical-align: middle;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/**************************   imagen 3d *****************************************************************/
+
+img{
+    height: 400px;
+    width: 320px ;
+    margin: auto 500px;
+    
+}
+ 
+#logotipo1{
+    width: 50px;
+    height: 50px;
+    margin:-60px 50px;
+   background-image: url(img/CC.png);
+  }
+  
+/************************     Formulario ***********************************/
+
+form{
+  margin-top:auto;
+
+}
+#linea {
+    width: 3px;
+    height: 350px;
+    margin:auto auto auto auto; /*superio, derecha,inferior,izquierda*/
+    margin-top: -320px;
+    margin-left: 690px;
+    background: #08b35d; 
+    text-align: center; 
+   }
+   #izq{
+    width: 650px;
+    height: 220px;
+    margin:auto auto auto 0px; /*superio, derecha,inferior,izquierda*/
+    font-size: 13px;
+    color:#000000;
+   
+    text-align: left;      
+   }
+   #fondoizq{
+    width: auto;
+    height: auto;
+    margin:auto auto auto auto; /*superio, derecha,inferior,izquierda*/
+    padding:10px; /*superio, derecha,inferior,izquierda*/
+    color:#000000;
+     
+    text-align: left; 
+   }
+   #der{
+    width: 550px;
+    height: auto;
+    margin:-220px 0px auto auto; /*superio, derecha,inferior,izquierda*/
+    color:#000000;
+      
+    text-align: left;      
+   }
+#fila1 {
+    width: auto;
+    height: auto;
+    margin:auto auto auto auto; /*superio, derecha,inferior,izquierda*/
+    padding:10px; /*superio, derecha,inferior,izquierda*/
+    color:#000000;
+    background: #08b35d; 
+    text-align: center; 
+   }
+   #fila2{
+    width: auto;
+    height: auto;
+    margin:auto auto auto auto; /*superio, derecha,inferior,izquierda*/
+    padding:10px 0px 0px 100px; /*superio, derecha,inferior,izquierda*/
+    color:#000000;
+   /* background: #748103;*/
+    text-align: center; 
+   }
+
+   #columna{
+    width: auto;
+    height: auto;
+    margin:auto auto auto auto; /*superio, derecha,inferior,izquierda*/
+    padding:20px; /*superio, derecha,inferior,izquierda*/
+    color:#000000;
+   /* background: #08b35d; */
+    text-align: center;
+   }
+   #botones{
+    width: auto;
+    height: auto;
+    margin:auto auto auto auto; /*superio, derecha,inferior,izquierda*/
+    padding:0px 0px 0px 450px; /*superio, derecha,inferior,izquierda*/
+     
+    /*color:#fdf7f7;
+    background: #d6cbce;*/
+   }
+   .boton {
+     
+    width: 200px;
+    margin: 40px auto;
+    padding: 1em 0;
+    border: 1px solid rgb(2, 48, 9);
+    color: #000000;
+    text-align: center;
+    background: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: border 0.3s, background 0.3s;
+  }
+  
+  .boton:focus {
+    outline: none;
+  }
+  
+  .boton span {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  
+  .boton:after {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    color: white;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  }
+  
+  .boton:hover {
+    border: 1px solid #18aa04;
+    background: #0a4902;
+  }
+  
+  .boton:hover:after {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 30%, 0);
+            transform: translate3d(0, 30%, 0);
+  }
+  
+  .boton:hover span {
+    opacity: 0;
+  }
+  
+  select{
+   width: auto;
+   background: #014d40;
+   color: #fff;
+   padding: 10px;
+   border:none;
+   font-size:13px;
+   box-shadow: 0 5px 25px rgba(0, 0, 0, .5)
+   /*padding:5px 5px 5px 5px; /*superio, derecha,inferior,izquierda*/
+
+  }
+
+  
+input {
+    /*width: 190px;
+    background-color: khaki;
+    
+    border: 3px solid #555;
+    */
+    padding: 3px;
+    margin:0px 0px 0px 10px; /*superio, derecha,inferior,izquierda*/
+    color: black;
+   width: 190px;
+   border: 2px solid khaki;
+   -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+   animation: mymove 5s infinite;
+  }
+  @-webkit-keyframes mymove {
+    50% {border-left-color: red;}
+  }
+  
+  @keyframes mymove {
+    50% {border-left-color: red;}
+  }
+ 
+ 
