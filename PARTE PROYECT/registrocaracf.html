@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+   <title>HTML 5 </title>
+   <meta charset= "UTF-8">
+   <script type="text/javascript" src="app.js"></script>
+   <link rel= "stylesheet" type= "text/css" href="Registro/estilos2.css">
+   <link rel= "stylesheet" type= "text/css" href="Registro/Estilos/style.css"> 
+<link rel= "stylesheet" type= "text/css" href="Registro/Estilos/Tabla.css">
+
+ </head>
+
+<body>
+        
+  <header>
+        
+      <p> COMMUNITY CENSO </p>
+      <div id="logotipo1"> </div>
+ </header>
+ <div id="container">
+    <nav>
+        <ul>
+             <li><a href="admin.html">Administrar usuario<i class="down"></i></a>
+                    <ul>
+                      <li><a href="Dar de alta.html">Dar de alta</a></li>
+                      <li><a href="Dar de baja.html">Dar de baja</a></li>    
+                   </ul>
+            </li>
+            <li><a href="registrar.html">hacer registro <i class="down"></i></a>
+            <!-- Primer Menu Desplegable -->
+            <ul>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                    <li><a href="registrojefef.html">Registro Jefe familiar</a></li>
+                    <li><a href="registrointegrante.html">Registro Integrante</a></li>
+                    <li><a href="registrocaracf.html">Registro Caracteriticas-Familia</a></li>
+                    <li><a href="registrocaracV.html">Registro Caracteristicas Vivienda </a></li>
+                    <li><a href="registroS.html">Registro Servicios</a></li>
+                    <li><a href="registroM.html">Registro Mascotas</a></li>
+               
+            </ul>        
+            </li>
+            <li><a href="modificar.html"> modificar </a>
+            </li>
+            <li> <a href = "eliminar.html"> Eliminar </a> </li> 
+            <li> <a href = "gestionar.html"> Gestionar  </a></li> 
+            <li><a href="consultas.html">Consultar <i class="down"></i></a>
+                <!-- Primer Menu Desplegable -->
+                <ul>
+                        <li><a href="#">Crear consulta</a></li>
+                        <li><a href="#">Modificar Consulta</a></li>
+
+                   
+                </ul>        
+                </li>
+           
+        </ul>
+    </nav>
+  </div>
+     
+   <FORM>
+      <table id="customers">
+          <tr>
+            <th>Caracteristicas-Familia</th>
+            <th>si</th>
+            <th>no</th>
+          </tr>
+          <tr>
+            <td> Cuenta con estufa lorena </td>
+            <td> 
+               
+                    <input type="radio" name="rb" id="1" />
+                    <label for="1">si</label>
+                
+            </td>
+            
+         
+            <td> 
+                <input type="radio" name="rb" id="2" />
+                <label for="2">no</label>
+            
+            </td>
+          </tr>
+          <tr>
+            <td> Consume agua tratada</td>
+            <td><input type="radio" name="rb2" id="3" />
+              <label for="3">si</label>
+            </td>
+            <td> 
+                <input type="radio" name="rb2" id="4" />
+                <label for="4">no</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Dispositivo de excreta</td>
+            <td><input type="radio" name="rb3" id="5" />
+              <label for="5">si</label>
+            </td>
+            <td> 
+                <input type="radio" name="rb3" id="6" />
+                <label for="6">no</label>
+            </td>
+
+
+          </tr>
+          <tr>
+            <td>Quema basura</td>
+            <td><input type="radio" name="rb4" id="7" />
+              <label for="7">si</label>
+            </td>
+            <td> 
+                <input type="radio" name="rb4" id="8" />
+                <label for="8">no</label>
+            </td>
+
+
+          </tr>
+          <tr>
+            <td>Quema hierba</td>
+            <td><input type="radio" name="rb5" id="9" />
+              <label for="9">si</label>
+            </td>
+            <td> 
+                <input type="radio" name="rb5" id="10" />
+                <label for="10">no</label>
+            </td>
+
+
+          </tr>
+          <tr>
+            <td>Aplica abate</td>
+            <td><input type="radio" name="rb6" id="11" />
+              <label for="11">si</label>
+            </td>
+            <td> 
+                <input type="radio" name="rb6" id="12" />
+                <label for="12">no</label>
+            </td>
+
+
+          </tr>
+          <tr>
+            <td>Usa mosquiteros</td>
+           <td><input type="radio" name="rb7" id="13" />
+              <label for="13">si</label>
+            </td>
+            <td> 
+                <input type="radio" name="rb7" id="14" />
+                <label for="14">no</label>
+            </td>
+
+
+          </tr>
+          <tr>
+            <td>Usa insecticidas</td>
+            <td><input type="radio" name="rb8" id="15" />
+              <label for="15">si</label>
+            </td>
+            <td> 
+                <input type="radio" name="rb8" id="16" />
+                <label for="16">no</label>
+            </td>
+
+
+          </tr>
+          <tr>
+            <td>Granja</td>
+            <td><input type="radio" name="rb9" id="17" />
+              <label for="17">si</label>
+            </td>
+            <td> 
+                <input type="radio" name="rb9" id="18" />
+                <label for="18">no</label>
+            </td>
+
+
+          </tr>
+          <tr>
+            <td>Huerto</td>
+            <td><input type="radio" name="rb10" id="19" />
+              <label for="19">si</label>
+            </td>
+            <td> 
+                <input type="radio" name="rb10" id="20" />
+                <label for="20">no</label>
+            </td>
+
+
+          </tr>
+        </table>
+
+        <div id="botones">
+             <button type="button"  class="boton" onclick="getData()">Enviar</button>
+            </div>
+    </FORM>
+    
+     <footer>
+
+     </footer>
+     </section>
+    
+</body>

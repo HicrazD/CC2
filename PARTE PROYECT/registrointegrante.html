@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+   <title>HTML 5 </title>
+   <meta charset= "UTF-8">
+   <script type="text/javascript" src="app.js"></script>
+   <link rel= "stylesheet" type= "text/css" href="Registro/Estilos/style.css">  <!-- Estilo para radio button y chel¿kbox-->
+<link rel= "stylesheet" type= "text/css" href="Registro/estilos2.css">
+
+ </head>
+
+<body>
+        
+  <header>
+        
+      <p> Registro-Jefe Familiar </p>
+      <div id="logotipo1"> </div>
+ </header>
+ <div id="container">
+    <nav>
+        <ul>
+             <li><a href="admin.html">Administrar usuario<i class="down"></i></a>
+                    <ul>
+                      <li><a href="Dar de alta.html">Dar de alta</a></li>
+                      <li><a href="Dar de baja.html">Dar de baja</a></li>    
+                   </ul>
+            </li>
+            <li><a href="registrar.html">hacer registro <i class="down"></i></a>
+            <!-- Primer Menu Desplegable -->
+            <ul>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                    <li><a href="registrojefef.html">Registro Jefe familiar</a></li>
+                    <li><a href="registrointegrante.html">Registro Integrante</a></li>
+                    <li><a href="registrocaracf.html">Registro Caracteriticas-Familia</a></li>
+                    <li><a href="registrocaracV.html">Registro Caracteristicas Vivienda </a></li>
+                    <li><a href="registroS.html">Registro Servicios</a></li>
+                    <li><a href="registroM.html">Registro Mascotas</a></li>
+               
+            </ul>        
+            </li>
+            <li><a href="modificar.html"> modificar </a>
+            </li>
+            <li> <a href = "eliminar.html"> Eliminar </a> </li> 
+            <li> <a href = "gestionar.html"> Gestionar  </a></li> 
+            <li><a href="consultas.html">Consultar <i class="down"></i></a>
+                <!-- Primer Menu Desplegable -->
+                <ul>
+                        <li><a href="#">Crear consulta</a></li>
+                        <li><a href="#">Modificar Consulta</a></li>
+
+                   
+                </ul>        
+                </li>
+           
+        </ul>
+    </nav>
+  </div>
+    
+   <FORM>
+     <div id="izq">
+        <span>Nombre &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span> 
+        <INPUT type="text"  id="nombre" name="nombre"> 
+         
+        <span>&nbsp;          Apellido Paterno</span> 
+       <INPUT type="text"  id="apellidop" name="apellidop"><br><br><br>
+
+      <div id="fondoizq">
+          <span>Apellido materno </span> 
+          <INPUT type="text"  id="apellidom" name="apellidom"> 
+            <span>Fecha  </span> <span>   &nbsp;</span>    <span>  &nbsp;</span> <span>&nbsp;&nbsp;&nbsp;</span>
+          <INPUT type="date"  id="fecha" name="fecha"> <br><br>
+          <span>Edad        &nbsp;</span> 
+          <span>  &nbsp;</span>     <span>  &nbsp;</span>     <span>  &nbsp;</span><span>   &nbsp;</span>  
+          <span>   &nbsp;</span>    <span>  &nbsp;</span>   <span>    &nbsp;</span> 
+          <span>   &nbsp;</span>    <span>  &nbsp;</span> <span>   &nbsp;</span> 
+
+          <INPUT type="number"  id="edad" name="edad"> 
+            <span>SEXO</span><span>                   &nbsp;</span> <span> &nbsp;</span> 
+            <select id="sexo"   onchange="ShowSelected();" name="sexo">
+              <option value="12">M</option>
+              <option value="13">F</option>
+              </select>
+
+              <span>Estado civil</span><span>                   &nbsp;</span> <span> &nbsp;</span> 
+            <select id="ec"   onchange="ShowSelected();" name="ec">
+              <option value="12">Soltero</option>
+              <option value="13">Casado</option>
+              <option value="13">Union libre</option>
+              <option value="13">viudo(a)</option>
+            </select>
+
+              <br><br>
+              <span>CURP &nbsp;&nbsp;&nbsp; </span> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <span>   &nbsp;</span>    <span>  &nbsp;</span> <span>&nbsp;&nbsp;&nbsp;</span>
+              <INPUT type="text"  id="curp" name="curp"> 
+
+                <span>Ocupacion </span>  
+              <INPUT type="text"  id="ocupacion" name="ocupacion"> <br><br><br><br>
+
+          <span>Esquema de vacunacion completo</span><br><br>
+            <div class="group">
+              <input type="radio" name="rb" id="yes" />
+              <label for="yes">si</label>
+              <input type="radio" name="rb" id="not" />
+              <label for="not">no</label>
+            </div>  
+ 
+      </div>
+     </div>
+
+     <!--        Aqui empieza la parte derecha del formulario         -->
+     <!--  ***************************************************************************-->
+     <div id="der">
+
+        <span>Tipo metodo  anticonceptivo</span><br><br>
+        <INPUT type="text"  id="tma" name="tma"><br><br>
+
+        <span>Tipo seguro</span><br><br>
+       <INPUT type="text"  id="ts" name="ts"><br><br><br>
+
+ 
+            <span>Prospera</span><br><br>
+            <div class="group">
+              <input type="radio" name="rb" id="si" />
+              <label for="si">si</label>
+              <input type="radio" name="rb" id="no" />
+              <label for="no">no</label>
+ 
+            </div>
+
+            <span>Nivel de estudios</span><br><br>
+            <INPUT type="text"  id="nivels" name="nivels"><br><br>
+ 
+              <span>Tipo de lengua</span><br><br>
+            <div class="group">
+              <input type="checkbox" name="rb" id="dialecto" />
+              <label for="dialecto">Solo dialecto</label>
+              <input type="checkbox" name="rb" id="español" />
+              <label for="español">Solo español</label>
+              <input type="checkbox" name="rb" id="eyd" />
+              <label for="eyd">Español y dialecto</label>
+ 
+            </div>
+     </div>
+    <div id="linea"></div>
+    
+    </FORM>
+
+     <footer>
+
+     </footer>
+     </section>
+    
+</body>
+</html>
